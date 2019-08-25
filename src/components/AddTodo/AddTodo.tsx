@@ -1,9 +1,14 @@
 import * as React from 'react'
-import { ITodoItem } from '../ShowItems/ShowItems'
 
 interface IAddTodoProps {
   addItem(todo: ITodoItem): void
   todoList: ITodoItem[]
+}
+
+interface ITodoItem {
+  id: number
+  text: string
+  isComplete: boolean
 }
 
 interface IState {
