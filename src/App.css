@@ -1,33 +1,104 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: lightgray;
+    padding: 1em;
+    font-size: 1em;
+    background: #f7f7f7;
+    text-align: center;
+    
   }
-  to {
-    transform: rotate(360deg);
+
+input:focus {
+    border-color: darkgray;
+    outline: none;
   }
+
+.main-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20vmin;
+    /* border: 1px solid cyan; */
 }
+
+.add-todo-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-list {
+    /* border: 1px solid red; */
+    margin-top: 1.5em;
+    padding: 0;
+
+}
+
+.todo-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+}
+
+.todo-item>* {
+    padding: 0.75em;
+}
+
+.remove-all-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: lightcoral;
+    color: white;
+}
+
+@media (min-width: 576px) {
+    
+ }
+
+@media (min-width: 768px) { 
+    input {
+        padding: 0.75em 3em;
+        margin: 0;
+        font-size: 1.5em;
+    }
+    .form-submit-input {
+        display: none;
+    }
+ }
+
+
+@media (min-width: 992px) { 
+
+    .main-wrapper {
+        max-width: 900px;
+    }
+
+ }
+
+
+@media (min-width: 1200px) {  }
